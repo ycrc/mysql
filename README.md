@@ -20,7 +20,7 @@ $ curl https://raw.githubusercontent.com/ISU-HPC/mysql/master/mysqlrootpw > ${HO
 
 3. Launch an instance of the container, bind-mounting the local directories
 ```
-$ singularity instance.start --bind ${PWD}/mysql/var/lib/mysql/:/var/lib/mysql --bind ${PWD}/mysql/run/mysqld:/run/mysqld shub://ISU-HPC/mysql mysql
+$ singularity instance start --bind ${PWD}/mysql/var/lib/mysql/:/var/lib/mysql --bind ${PWD}/mysql/run/mysqld:/run/mysqld shub://ISU-HPC/mysql mysql
 ```
 
 4. Run the container's runscript to initialize mysqld and then launch mysqld
